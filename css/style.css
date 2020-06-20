@@ -1,0 +1,44 @@
+#firstPage {
+    background-image: url(imgs/sketch.png);
+    background-size: auto 100vw;
+/*    height: 100vh;   */
+}
+
+.menu li {
+    list-style: none;
+    color: aliceblue;    
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+li {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.site-title {
+    color:white;
+    font-family: monospace;
+    font-size: 70px;
+    padding-left: 200px;
+    text-align: left;
+}
+
+.site-subtitle {
+    color: white;
+    font-family: monospace;
+    font-size: 40px;
+    padding-left: 200px;
+    text-align: left;
+}
