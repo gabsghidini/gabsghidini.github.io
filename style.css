@@ -1,12 +1,11 @@
 #firstPage {
-    background-image: url(imgs/sketch.png);
+    background-image: url(sketch.png);
     background-size: auto 100vw;
-/*    height: 100vh;   */
+    height: 100vh;
 }
 
 .menu li {
     list-style: none;
-    color: aliceblue;    
 }
 
 .menu ul {
