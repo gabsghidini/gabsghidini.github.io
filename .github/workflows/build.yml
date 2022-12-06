@@ -1,0 +1,22 @@
+name: deploy
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                node-version: [16.16.0]
+        steps:
+            - uses: actions/checkout@v1
+            - run: yarn install && yarn build
+            - name: Deploy to gh-pages
+            - uses: JamesIves/github-pages-deploy-action@v4
+              with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  branch: gh-pages
+                  folder: build
