@@ -1,3 +1,4 @@
+import PT from "../Assets/Res/Gabs-Ghidini-PT.pdf";
 import Avatar from "../Assets/Images/profile-picture.jpg";
 import InformationContainer from "./InformationContainer";
 import SocialNetworks from "./SocialNetworks";
@@ -11,7 +12,7 @@ const Sidebar = () => {
 			<p className="title">Desenvolvedor Front-End</p>
 			<SocialNetworks />
 			<InformationContainer />
-			<a href="#" className="btn">
+			<a href={PT} className="btn" download>
 				Download Currículo
 			</a>
 		</aside>
