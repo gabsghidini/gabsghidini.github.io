@@ -1,0 +1,52 @@
+@use 'variables'
+
+@mixin center
+    display: flex
+    justify-content: center
+    align-items: center
+
+@mixin btn
+    padding: 1rem 1.2rem
+    color: variables.$color
+    background: variables.$gradient
+    text-decoration: none
+    border-radius: 3rem
+
+@mixin gradient-border
+    content: ""
+    @include animation-gradient
+    height: 0.1875rem
+    width: 30%
+
+
+@mixin animation-gradient
+    background: linear-gradient(270deg, #d039db, #fd1d1d, #fcb045)
+    background-size: 600% 600%
+
+    -webkit-animation: GradientAnimation 30s ease infinite
+    -moz-animation: GradientAnimation 30s ease infinite
+    animation: GradientAnimation 30s ease infinite
+
+    @-webkit-keyframes GradientAnimation 
+        0%
+            background-position:0% 50%
+        50%
+            background-position:100% 50%
+        100%
+            background-position:0% 50%
+
+    @-moz-keyframes GradientAnimation 
+        0%
+            background-position:0% 50%
+        50%
+            background-position:100% 50%
+        100%
+            background-position:0% 50%
+
+    @keyframes GradientAnimation 
+        0%
+            background-position:0% 50%
+        50%
+            background-position:100% 50%
+        100%
+            background-position:0% 50%

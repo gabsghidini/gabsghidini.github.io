@@ -1,0 +1,45 @@
+@use '../variables'
+@use '../mixins'
+
+#sidebar
+    @include mixins.center
+    background-color: variables.$background-color
+    border-radius: variables.$container-border-radius
+    flex: 1 1 0
+    flex-direction: column
+    text-align: center
+    padding: 3rem 0
+    height: auto
+    
+    img 
+        width: 70%
+        border-radius: variables.$container-border-radius
+
+    .title 
+        color: variables.$color-secondary
+        background-color: variables.$background-color-secondary
+        border-radius: variables.$container-border-radius
+        font-size: 1rem
+        font-weight: 700
+        margin-top: 2rem
+        padding: .8rem 1.2rem
+    
+    .name
+        margin-top: -45px
+        color: variables.$color
+        text-shadow: 0 5px 10px rgba(0, 0, 0, .9)
+        font-size: 1.8rem
+        font-weight: 700
+        width: 70%
+
+
+    .btn
+        @include mixins.btn
+    
+@media (min-width: 727px)
+    #sidebar
+       height: 800px
+
+@media (min-width: 1060px)
+    #sidebar
+        height: auto
